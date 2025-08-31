@@ -2,54 +2,116 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f8f9fa;
+  color: #222;
   scroll-behavior: smooth;
 }
 
 header {
   background: #222;
   color: #fff;
-  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px;
 }
 
-header ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
-header ul li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: #00bcd4;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hero {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #007bff, #00bcd4);
+  background: linear-gradient(45deg, #007bff, #00bcd4);
   color: white;
+  text-align: center;
 }
 
-.btn {
-  background: #fff;
-  color: #007bff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+.hero .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-section {
+.page-content {
   padding: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  width: 250px;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
   background: #222;
-  color: #fff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode header {
+  background: #1e1e1e;
+}
+
+.dark-mode .btn {
+  background: #00bcd4;
+}
+
+.dark-mode .project-card {
+  background: #1e1e1e;
 }

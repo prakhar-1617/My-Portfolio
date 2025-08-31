@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prakhar Kumar | Home</title>
+  <title>Projects | Prakhar Kumar</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav class="navbar">
       <h1 class="logo">Prakhar Kumar</h1>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -25,12 +24,20 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/profile.jpg" alt="Profile" class="profile-img">
-    <h2>Hi, I'm Prakhar 👋</h2>
-    <p>Aspiring AI & ML Engineer | Flutter Developer | Problem Solver</p>
-    <a href="projects.html" class="btn">View My Work</a>
+  <section class="page-content">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>A chatbot built using Python and NLP.</p>
+        <a href="#" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Flutter App</h3>
+        <p>A mobile app built with Flutter and Firebase.</p>
+        <a href="#" target="_blank">View on GitHub</a>
+      </div>
+    </div>
   </section>
 
   <footer>
